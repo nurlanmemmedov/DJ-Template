@@ -1,0 +1,117 @@
+footer{
+    padding: $section-padding;
+    .foot{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+       
+    .foot-item{
+        .about{
+        width: 100%;
+        .desc{
+            font-family: $font-nunito;
+            p{
+                font-weight: 400;
+                font-size: 1.1rem;
+                color: $color-p;
+            }
+        }
+        }
+        .subscribe{
+        form{
+            height: 60px;;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+
+        input{
+            color: white;
+            height: 100%;
+            padding: 6px 20px;
+            background: transparent;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem 0  0 0.25rem;
+            border-right: transparent;
+        }
+        button{
+            color: white;
+            height: 100%;
+            border-radius:0   0.25rem  0.25rem 0;
+            background-color: $color-lighter-pink;
+            border: transparent;
+        }
+    }
+        }
+    }
+    .foot-item{
+        .navs{
+            
+            .nav{
+                 font-family: $font-nunito;
+            ul{
+                padding-right: 30px;
+                padding-left: 0;
+                li{
+                    list-style-type: none;
+                    margin-bottom: 10px;
+                    a{
+                        text-decoration: none;
+                        color: $color-p;
+                    }
+                }
+            }
+        }}
+        .follow-us{
+            .icons{
+                width: 150px;
+                padding-top: 18px;
+                display: flex;
+                justify-content: space-between;
+                img{
+                    
+                    color: $color-p;
+                    width: 16px;
+                }
+            }
+        }
+    }
+    .foot-item{
+        .video{
+            img{
+                position: relative;
+                width: 100%;
+
+            }
+            a{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); 
+                button{
+                    background-color: $color-white;
+                    width: 70px;
+                    height: 70px;
+                    border: transparent;
+                    border-radius: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                        img{
+                            width: 35%;
+                    }
+                }
+            }
+        }
+    }
+    }
+    p{
+        font-family: $font-nunito;
+        color: $color-p;
+    }
+}
+
+.item-height{
+    height: 290px;
+}

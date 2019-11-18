@@ -1,0 +1,132 @@
+header{
+    height: 114px;
+    padding-top: 50px ;
+    .container{
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        width: 1140px;
+            .site-name{
+                h1{
+                    font-weight: bolder;
+                    font-size: $font-size-oswald*2;
+                }
+            }
+            .nav{
+                display: flex;
+                justify-content: flex-end;
+                font-family: $font-nunito;
+                font-size: $font-size-nunito *1.1;
+                ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    list-style: none;
+                    
+                    li{
+                        margin-left: 40px;
+                        font-weight: 300;
+                        
+                        a{ transition: all .4s ease;
+                            color: $color-lighter-white;
+                            &:hover {
+                                color: $color-white;
+                            }
+                           
+                        };
+                        
+                       
+                    }
+                    .show{
+                        &:hover .square{
+                            border-color: $color-white;
+                         }
+                       &:hover .drop{
+                           opacity: 1;
+                           transform: translateY(0)
+                        }
+                      
+                        position: relative;
+                        a{ 
+                           
+                         
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                           
+                            span{
+                                    .square{
+                                        width: 9px;
+                                        height: 9px;
+                                        border: 2px solid $color-lighter-white;
+                                        border-left: transparent;
+                                        border-top: transparent;
+                                        transform: rotateZ(45deg);
+                                        margin-left: 5px;
+                                    }
+                            }
+                          
+                        }
+                        .drop{
+                            cursor: auto;
+                            height: 190px;;
+                            position: absolute !important;
+                            top: 20px;
+                            left: -14px;
+                            transition: all .4s ease;
+                            transform: translateY(20px);
+                            opacity: 0;
+                            &:hover{
+                                opacity: 0;
+                                 transform: translateY(0)
+                             }
+                           
+                        .row{
+                            width: 35px;
+                            height: 60px;
+                            border-bottom: solid 20px white;
+                            border-right: solid 20px transparent;
+                            border-left: solid 20px transparent;
+                            border-top: solid 20px transparent;
+                            margin-left: 30px
+                        }
+                        .dropdown{
+                            background-color: $color-white;
+                            text-align: left;
+                            width: 205px;
+                            height: 184px;
+
+                            ul{
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-start;
+                                margin: 0;
+                                padding: 0;
+                               
+                               
+                                li{
+                                    width: 100%;
+                                    height: calc(100%/4);
+                                    margin: 0;
+                                    padding:  0 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    
+                                    a{
+                                        color: $color-liblack;
+                                    }
+                                }
+                            }
+                           
+                        }
+                       
+                    }
+                   
+
+                }
+        }   }
+    }
+
+}

@@ -1,0 +1,65 @@
+body{
+    line-height: 1.7;
+    margin: 0;
+    font-family: $font-oswald;
+    color: $color-white;
+    background-color: $color-main;
+    // height: 1500px;♦
+}
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+
+
+.img-parent{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    cursor: pointer;
+    &:hover .img-common{
+        transform: scale(1);
+        }
+    
+.img-common{
+    transform: scale(1.1);
+    width: 100%;
+    // height: 100%;
+    transition: .3s ease;
+  
+}
+}
+
+.party-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: $color-white;
+    .party-name{
+        background-color: $color-lighter-pink;
+        h1{
+            margin-bottom: 0;
+            padding: 8px;
+            font-weight: 400;
+            font-size: 20px;
+        }
+    }
+    .party-details{
+        background-color: $color-black;
+        
+        p{
+            font-size: 11px;
+            margin-bottom: 0;
+            padding-left: 10px;
+            padding-right: 30px;
+            padding-bottom: 4px;
+            font-size: 11px;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+        }
+    }
+}

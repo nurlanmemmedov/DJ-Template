@@ -1,0 +1,11 @@
+.button-style{
+    background-color: $color-lighter-pink;
+    border: 1px solid $color-pink;
+    color: $color-white;
+    border-radius: $border-radius;
+    font-family: $font-nunito;
+    transition: .4s ease;
+    &:hover{
+        background-color: $color-pink;
+    }
+}
